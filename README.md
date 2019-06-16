@@ -1,8 +1,12 @@
-# Pivotal UI [![npm version](https://badge.fury.io/js/pivotal-ui.svg)](https://www.npmjs.com/package/pivotal-ui)
+# yokui [![npm version](https://badge.fury.io/js/pivotal-ui.svg)](https://www.npmjs.com/package/pivotal-ui)
 
-Pivotal UI is Pivotal's design system & component library. It contains CSS & React components that are styled for the Pivotal brand.
+yokui adalah sistem desain dari yoiso yang bertujuan untuk membantu tim yoiso secara efisien merancang dan membangun aplikasi dan situs web yang terlihat dan terasa konsisten.
 
-For documentation, [visit the style guide](https://styleguide.pivotal.io).
+Jika Anda baru menggunakan yokui, mulailah dengan membaca FAQ dan halaman tentang tipografi, warna, kisi 8-point, dan aksesibilitas. Dengan begitu Anda akan punya gambaran tentang prinsip-prinsip di balik sistem desain.
+
+Sistem ini diimplementasikan sebagai pustaka Figma, komponen React, dan gaya CSS yang dapat Anda sertakan dalam proyek Anda. Untuk mulai menggunakan yokui, ikuti langkah-langkah di bawah ini.
+
+Sebagian besar materi yokui dimodifikasi dari Pivotal UI.
 
 ## Installation
 
