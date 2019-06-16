@@ -8,6 +8,8 @@ Sistem ini diimplementasikan sebagai pustaka Figma, komponen React, dan gaya CSS
 
 Sebagian besar materi yokui dimodifikasi dari Pivotal UI.
 
+Styleguide website https://eager-gates-b0e80b.netlify.com/
+
 ## Installation
 
 yokui is most commonly consumed as an NPM package:
