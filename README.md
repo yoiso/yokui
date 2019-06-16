@@ -1,4 +1,4 @@
-# yokui [![npm version](https://badge.fury.io/js/pivotal-ui.svg)](https://www.npmjs.com/package/pivotal-ui)
+# yokui [![npm version](https://badge.fury.io/js/yokui.svg)](https://badge.fury.io/js/yokui)
 
 yokui adalah sistem desain dari yoiso yang bertujuan untuk membantu tim yoiso secara efisien merancang dan membangun aplikasi dan situs web yang terlihat dan terasa konsisten.
 
