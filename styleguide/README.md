@@ -1,6 +1,6 @@
 # Pivotal UI Styleguide
 
-This is the styleguide and documentation for [Pivotal UI](https://github.com/pivotal-cf/pivotal-ui), Pivotal's design system.
+This is the styleguide and documentation for [yokui](https://github.com/yoiso/yokui), yoiso's design system.
 
 ## Contributing
 
