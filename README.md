@@ -10,10 +10,10 @@ Sebagian besar materi yokui dimodifikasi dari Pivotal UI.
 
 ## Installation
 
-Pivotal UI is most commonly consumed as an NPM package:
+yokui is most commonly consumed as an NPM package:
 
 ```bash
-npm install pivotal-ui
+npm install yokui
 ```
 
 ## Contributing
