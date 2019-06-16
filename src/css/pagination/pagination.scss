@@ -1,0 +1,18 @@
+@import "../pui-variables";
+
+$pagination-active-color: $blue;
+
+.pagination {
+  .active {
+    color: $pagination-active-color;
+    text-decoration: underline;
+  }
+
+  .pui-btn {
+    padding: 0 $base-unit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

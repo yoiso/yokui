@@ -1,0 +1,124 @@
+@import "../pui-variables";
+
+$header-height: $base-unit * 7;
+
+.pui-siteframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pui-siteframe-header {
+  background: $dark-gray;
+  color: $white;
+  margin: 0;
+
+  & > .col {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+.pui-siteframe-header-title {
+  a, a:hover {
+    color: inherit;
+  }
+}
+
+.pui-siteframe-body {
+  flex: 1;
+  height: 100%;
+  max-height: calc(100vh - #{$header-height});
+
+  & > .col {
+    height: 100%;
+  }
+
+  .pui-siteframe-sidebar {
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    width: $base-unit * 22;
+    height: 100%;
+    overflow: auto;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      text-decoration: none;
+    }
+
+    .pui-sidebar-li-content > a {
+      color: $accent-gray;
+      flex: 1;
+    }
+
+    .pui-sidebar-primary-links {
+      flex: 1;
+
+      a {
+        padding: $base-unit 2*$base-unit;
+      }
+
+      li {
+        display: flex;
+      }
+
+      div.pui-sidebar-li-content {
+        display: flex;
+        flex: 1;
+      }
+
+      .pui-sidebar-li-active {
+        background-color: $dark-gray;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: $base-unit/2;
+          background-color: $teal;
+        }
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    .pui-sidebar-secondary-links {
+      flex: 0 0 auto;
+
+      svg {
+        fill: $accent-gray;
+      }
+
+      .icon {
+        margin-left: $base-unit/2;
+      }
+
+      li {
+        padding: $base-unit/2 0;
+      }
+
+      .pui-sidebar-li-content > a {
+        padding: 0 2*$base-unit;
+      }
+    }
+  }
+}
+
+.pui-siteframe-footer {
+  background: $dark-gray;
+  padding: 0 2*$base-unit;
+}

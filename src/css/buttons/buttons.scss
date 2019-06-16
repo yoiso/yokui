@@ -1,0 +1,194 @@
+@import "../pui-variables";
+
+@mixin button-kind($color, $color-hover, $color-on-dark, $color-on-dark-hover) {
+  background: $color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: $color-hover;
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  &.pui-btn--flat {
+    background: transparent;
+    color: $color;
+    box-shadow: initial;
+
+    &:hover,
+    &:focus {
+      color: $color-hover;
+    }
+  }
+
+  &.pui-btn--alt {
+    background: transparent;
+    border-color: currentColor;
+    color: $color;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: $color-hover;
+    }
+  }
+
+  &.pui-btn--on-dark {
+    background: $color-on-dark;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      background: $color-on-dark-hover;
+      outline-color: $light-gray;
+    }
+
+    &.pui-btn--flat {
+      background: transparent;
+      color: $color-on-dark;
+
+      &:hover,
+      &:focus {
+        color: $color-on-dark-hover;
+      }
+    }
+
+    &.pui-btn--alt {
+      background: transparent;
+      border-color: currentColor;
+      color: $color-on-dark;
+
+      &:hover,
+      &:focus {
+        color: $color-on-dark-hover;
+      }
+    }
+  }
+}
+
+.pui-btn {
+  align-items: center;
+  background: none;
+  border: $btn-border-width solid transparent;
+  border-radius: $btn-border-radius;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  height: $base-unit * 4;
+  justify-content: center;
+  letter-spacing: $btn-letter-spacing;
+  line-height: ($base-unit * 4) - $btn-border-width;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 ($base-unit * 2);
+  position: relative;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out,
+  border-color 200ms ease-in-out, box-shadow 200ms ease-in-out, outline 50ms ease-in-out;
+  white-space: nowrap;
+
+  .icon {
+    fill: currentColor;
+    margin-right: $base-unit;
+  }
+
+  .icon-spinner-lg,
+  .icon-spinner-md,
+  .icon-spinner-sm {
+    .path {
+      stroke: currentColor;
+    }
+
+    .ring {
+      stroke: currentColor;
+    }
+  }
+
+  & + & {
+    margin-left: $base-unit;
+  }
+
+  &:focus {
+    outline: 2px dashed $dark-gray;
+    outline-offset: 4px;
+    z-index: 1;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.pui-btn--primary {
+    @include button-kind(
+            $color: $btn-primary-color,
+            $color-hover: $btn-primary-color-hover,
+            $color-on-dark: $btn-primary-color-on-dark,
+            $color-on-dark-hover: $btn-primary-color-on-dark-hover
+    );
+  }
+
+  &.pui-btn--default {
+    @include button-kind(
+            $color: $btn-default-color,
+            $color-hover: $btn-default-color-hover,
+            $color-on-dark: $btn-default-color-on-dark,
+            $color-on-dark-hover: $btn-default-color-on-dark-hover
+    );
+  }
+
+  &.pui-btn--danger {
+    @include button-kind(
+            $color: $btn-danger-color,
+            $color-hover: $btn-danger-color-hover,
+            $color-on-dark: $btn-danger-color-on-dark,
+            $color-on-dark-hover: $btn-danger-color-on-dark-hover
+    );
+  }
+
+  &.pui-btn--brand {
+    @include button-kind(
+            $color: $btn-brand-color,
+            $color-hover: $btn-brand-color-hover,
+            $color-on-dark: $btn-brand-color-on-dark,
+            $color-on-dark-hover: $btn-brand-color-on-dark-hover
+    );
+  }
+
+  &.pui-btn--lg {
+    font-size: $btn-lg-font-size;
+    height: $base-unit * 5;
+    line-height: ($base-unit * 5) - $btn-border-width;
+  }
+
+  &.pui-btn--sm {
+    font-size: $btn-sm-font-size;
+    height: $base-unit * 3;
+    line-height: ($base-unit * 3) - $btn-border-width;
+    padding: 0 $base-unit;
+  }
+
+  &.pui-btn--full {
+    width: 100%;
+  }
+
+  &.pui-btn--icon-only {
+    padding: $base-unit;
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+
+  &.pui-btn--icon-right {
+    .icon {
+      margin-right: 0;
+      margin-left: $base-unit;
+    }
+  }
+}

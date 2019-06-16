@@ -1,0 +1,37 @@
+@import "../pui-variables";
+
+.pui-flyout-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pui-flyout-dialog-backdrop {
+  position: absolute;
+  overflow: hidden;
+}
+
+.pui-flyout-dialog {
+  width: $screen-xs;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(0.8 * $screen-xs);
+
+  .pui-flyout-header {
+    padding: ($base-unit * 2) 0 ($base-unit * 2) 0;
+    margin: 0;
+    border-bottom: 3px solid $light-gray;
+
+    .col {
+      align-self: center;
+    }
+  }
+
+  .pui-flyout-body {
+    padding: $base-unit * 2;
+    overflow: auto;
+    max-height: calc(100% - 70px);
+  }
+}

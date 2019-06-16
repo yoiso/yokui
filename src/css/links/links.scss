@@ -1,0 +1,42 @@
+@import "../pui-variables";
+@import "../mixins";
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include transition-pui();
+}
+
+a:hover {
+  text-decoration: none;
+  color: $link-hover-color;
+}
+
+.no-underline {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline-hover:hover {
+  text-decoration: underline;
+}
+
+.underline-blue {
+  background-image: $underline;
+}
+
+.underline-blue-hover:hover {
+  background-image: $underline !important;
+}
+
+.underline-gray {
+  background-image: $underline-gray;
+}
+
+.underline-gray-hover:hover {
+  background-image: $underline-gray !important;
+}

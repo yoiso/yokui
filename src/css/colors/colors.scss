@@ -1,0 +1,53 @@
+@import "../pui-variables";
+
+@each $color-name, $color-value in $general-color-palette {
+  .bg-#{$color-name} {
+    background-color: $color-value !important;
+  }
+}
+
+.bg-hover--onDark:hover {
+  background-color: $hover--onDark;
+}
+
+.bg-hover--onLite:hover {
+  background-color: $hover--onLite;
+}
+
+// These classes are for the style guide only
+
+.bg-glow-1 {
+  background-color: $glow-1 !important;
+}
+
+.bg-glow-2 {
+  background-color: $glow-2 !important;
+}
+
+.bg-glow-3 {
+  background-color: $glow-3 !important;
+}
+
+.bg-glow-4 {
+  background-color: $glow-4 !important;
+}
+
+.bg-glow-5 {
+  background-color: $glow-5 !important;
+}
+
+.bg-shadow-1 {
+  background-color: $shadow-1 !important;
+}
+
+.bg-shadow-2 {
+  background-color: $shadow-2 !important;
+}
+
+.bg-shadow-3 {
+  background-color: $shadow-3 !important;
+}
+
+.bg-shadow-4 {
+  background-color: $shadow-4 !important;
+}

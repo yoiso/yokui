@@ -1,0 +1,65 @@
+@import "../pui-variables";
+@import '../mixins';
+
+.pui-modal-dialog-backdrop {
+  position: fixed;
+}
+
+.pui-modal-dialog {
+  width: $modal-md;
+  margin: ($base-unit * 6) auto;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid $modal-content-border-color;
+  transform: translateY(-$base-unit * 10);
+
+  &.pui-modal-lg {
+    width: $modal-lg;
+  }
+
+  &.pui-modal-sm {
+    width: $modal-sm;
+  }
+
+  .pui-modal-close-btn {
+    position: absolute;
+    right: $base-unit * 2;
+    top: $base-unit * 2;
+  }
+}
+
+.pui-modal-header {
+  min-height: ($modal-title-padding + $modal-title-line-height);
+  border-bottom: 0;
+  padding: ($base-unit * 3) ($base-unit * 3) 0 ($base-unit * 3);
+}
+
+.pui-modal-title {
+  margin: inherit;
+  line-height: inherit;
+}
+
+.pui-modal-body {
+  padding: $base-unit ($base-unit * 3) ($base-unit * 3) ($base-unit * 3);
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &.pui-modal-has-footer {
+    padding-bottom: $base-unit;
+  }
+}
+
+.pui-modal-footer {
+  padding: 0 ($base-unit * 3) ($base-unit * 3) ($base-unit * 3);
+  text-align: right;
+  border-top: 0;
+  @include clearfix; // clear it in case folks use .pull-* classes on buttons
+
+  .pui-btn + .pui-btn {
+    margin-left: $base-unit;
+    margin-bottom: 0;
+  }
+}

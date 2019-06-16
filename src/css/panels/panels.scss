@@ -1,0 +1,84 @@
+@import "../pui-variables";
+
+.pui-panel-container {
+  display: block;
+
+  .pui-panel-title, .pui-panel-header, .pui-panel-footer {
+
+    & > .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .pui-panel-title .h5 {
+    line-height: 4 * $base-unit;
+  }
+
+  .pui-panel-title {
+    display: flex;
+    align-items: center;
+    padding: 0 $base-unit;
+    margin-bottom: 2 * $base-unit;
+  }
+
+  .pui-panel-loading-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    overflow: hidden;
+
+    animation: pui-panel-loading-slide 3s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 100%;
+      width: 40%;
+      height: 3px;
+      background-color: $accent-gray;
+      animation: pui-panel-loading-slide 3s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+      -webkit-animation: pui-panel-loading-slide 3s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+  }
+
+  @keyframes pui-panel-loading-slide {
+    0% {
+      right: 100%;
+      width: 100%;
+      opacity: 1;
+    }
+    85% {
+      opacity: .15;
+    }
+    100% {
+      right: 0;
+      width: 100%;
+      opacity: .05;
+    }
+  }
+
+  .pui-panel-header {
+    border-bottom: 3px solid $light-gray;
+  }
+
+  .pui-panel-header, .pui-panel-footer {
+    padding: $base-unit;
+  }
+
+  .pui-panel-body {
+    padding: $base-unit;
+    position: relative;
+  }
+
+  .pui-panel-body, .td {
+    min-height: 5 * $base-unit;
+  }
+
+  .pui-panel-header.grid {
+    margin: 0;
+  }
+}

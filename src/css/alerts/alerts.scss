@@ -1,0 +1,54 @@
+@import '../pui-variables';
+@import '../mixins';
+
+.pui-alert {
+  border: none;
+  padding: $base-unit;
+  margin: 0;
+  color: $alert-text-color;
+
+  a, a:hover {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  & > div.grid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  // Headings for larger alerts
+  h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing $headings-color
+    color: inherit;
+  }
+
+  .icon {
+    font-size: $font-size-h3;
+    line-height: $headings-line-height;
+  }
+
+  .pui-alert-close-btn.pui-btn {
+    height: unset;
+    padding: 0;
+  }
+}
+
+.pui-alert-success {
+  @include pui-alert-variant($alert-success-bg, $alert-success-border, $alert-success-icon-color);
+}
+
+.pui-alert-info {
+  @include pui-alert-variant($alert-info-bg, $alert-info-border, $alert-info-icon-color);
+}
+
+.pui-alert-warning {
+  @include pui-alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-icon-color);
+}
+
+.pui-alert-danger {
+  @include pui-alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-icon-color);
+}

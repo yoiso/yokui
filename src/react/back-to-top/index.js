@@ -1,0 +1,1 @@
+export {BackToTop} from './back_to_top';

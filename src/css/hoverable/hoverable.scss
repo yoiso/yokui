@@ -1,0 +1,16 @@
+@import "../pui-variables";
+
+[hoverable]:hover, [hoverable].clicked {
+  background-color: $light-gray;
+
+  .hovered {
+    visibility: visible;
+  }
+}
+
+[hoverable] {
+  .hovered {
+    visibility: hidden;
+    float: right;
+  }
+}
