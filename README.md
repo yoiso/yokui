@@ -16,16 +16,10 @@ Pivotal UI is most commonly consumed as an NPM package:
 npm install pivotal-ui
 ```
 
-## Maintainers
-
-See [MAINTAINERS.md](MAINTAINERS.md).
-
 ## Contributing
 
 Please refer to our [contribution guidelines](https://styleguide.pivotal.io/contribute/index).
 
 Pivotal UI expects all maintainers, consumers, and contributors to adhere to our [code of conduct](CODE_OF_CONDUCT.md).
 
-## Copyright Notice
-
-Copyright 2015-2019 Pivotal Software, Inc. All Rights Reserved.   
+MIT
