@@ -19,20 +19,20 @@ Jika Anda seorang desainer yang ingin memasukkan yokui ke dalam desain Anda, And
 ## For Developers
 ###Installing from npm
 
-The most common way to add yokui to your project is to use the [npm package](https://www.npmjs.com/package/pivotal-ui). The package includes all of yokui's CSS, Sass variables, and React components.
+The most common way to add yokui to your project is to use the [npm package](https://www.npmjs.com/package/yokui). The package includes all of yokui's CSS, Sass variables, and React components.
 
 You will need to have Node installed. If you do not, [see here for instructions](https://docs.npmjs.com/getting-started/installing-node). Node comes with `npm` for managing dependencies, but you might prefer to use [Yarn](https://yarnpkg.com/). If you do not have an existing project, you can create one with `npm init` or `yarn init`.
 
 We also assume that you are using a bundler like [Webpack](https://webpack.js.org/), which will allow you to import CSS directly into JavaScript files.
 
-Once these are set up, install the `pivotal-ui` Node module in your project like this:
+Once these are set up, install the `yokui` Node module in your project like this:
 
 ```bash
 # if using npm:
-npm install pivotal-ui
+npm install yokui
 
 # if using yarn:
-yarn add pivotal-ui
+yarn add yokui
 ```
 
 To use individual components, see the instructions on the pages for those components.
