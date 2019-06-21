@@ -7,6 +7,7 @@ $gray--onLite: #5C6D76;
 $gray--onDark: #919FA8;
 $accent-gray: #89969f;
 $light-gray: #eaedef;
+$gray-150: #e5eef4;
 $white: #ffffff;
 
 $light-blue: #c2e7ff;
@@ -44,6 +45,7 @@ $general-color-palette: (
   'gray': $gray,
   'accent-gray': $accent-gray,
   'light-gray': $light-gray,
+  'gray-150': $gray-150,
   'white': $white,
   'light-blue': $light-blue,
   'accent-blue': $accent-blue,
@@ -249,7 +251,7 @@ $table-font-size: $font-size-small;
 $table-header-font-weight: 600;
 $table-bg: transparent !default;
 $table-bg-hover: rgba($black, 0.03);
-$table-border-color: $light-gray;
+$table-border-color: $gray;
 $table-border-radius: 2px;
 
 // Buttons

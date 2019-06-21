@@ -1,5 +1,5 @@
 export const colorGroups = {
-  gray: ['black', 'dark-gray', 'gray', 'accent-gray', 'light-gray', 'white'],
+  gray: ['black', 'dark-gray', 'gray', 'accent-gray', 'gray-150', 'light-gray', 'white'],
   teal: ['teal', 'accent-teal', 'light-teal'],
   blue: ['dark-blue', 'blue', 'accent-blue', 'light-blue'],
   red: ['dark-red', 'red', 'light-red'],
