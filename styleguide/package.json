@@ -36,6 +36,7 @@
     "classnames": "^2.2.5",
     "codemirror": "^5.43.0",
     "elasticlunr": "^0.9.5",
+    "gh-pages": "^2.0.1",
     "pretty": "^2.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.8.0",
@@ -48,6 +49,7 @@
     "clean": "rm -rf public && rm -rf .cache",
     "build": "yarn clean && gatsby build",
     "start": "gatsby develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy:gh-pages": "yarn build && node_modules/.bin/gh-pages -d public -b master"
   }
 }
