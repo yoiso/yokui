@@ -8,7 +8,7 @@ Sistem ini diimplementasikan sebagai pustaka Figma, komponen React, dan gaya CSS
 
 Sebagian besar materi yokui dimodifikasi dari Pivotal UI.
 
-Styleguide website https://eager-gates-b0e80b.netlify.com/
+Styleguide website https://yoiso.github.io/
 
 ## Installation
 
