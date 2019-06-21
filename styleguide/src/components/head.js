@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {siteMetadata} from '../../gatsby-config';
-import favicon from '../../static/favicon.ico';
+import favicon from '../../static/favicon.ico.png';
 
 const link = [{
   rel: 'shortcut icon', type: 'image/ico', href: favicon
