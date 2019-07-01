@@ -17,6 +17,7 @@ $header-height: $base-unit * 7;
   background: $dark-gray;
   color: $white;
   margin: 0;
+  padding: 8px 0;
 
   & > .col {
     justify-content: center;
