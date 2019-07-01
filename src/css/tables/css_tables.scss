@@ -11,6 +11,14 @@
     margin: 0;
   }
 
+  thead {
+    background: $light-gray;
+  }
+
+  .thead {
+    background: $light-gray;
+  }
+
   //Table Row
   .tr {
     border-top: solid 1px $table-border-color;

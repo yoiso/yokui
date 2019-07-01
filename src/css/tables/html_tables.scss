@@ -16,6 +16,10 @@ table.table {
     margin: 0;
   }
 
+  thead {
+    background: $light-gray;
+  }
+
   //General Row
   tr {
     border-top: solid 1px $table-border-color;
