@@ -9,7 +9,7 @@
   },
   "name": "yokui",
   "description": "***",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
