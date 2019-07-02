@@ -34,6 +34,7 @@ Inputs will only be fully styled if their type is properly declared.
 //title=With icon
 <div>
     <Input placeholder="Search" icon="search"/>
+    <Input placeholder="Date" type="date" icon="calendar"/>
     <Input placeholder="Success" icon="check" className="mtxxl"/>
 </div>
 ```
